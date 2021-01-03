@@ -1,0 +1,33 @@
+   
+<form
+
+name="form"
+(ngSubmit)="f.form.valid && onSubmit()"
+#f="ngForm"
+novalidate>
+
+
+<input type="text"
+placeholder="Last name"
+name="employeeName"
+[(ngModel)]="form.employeeName"
+
+
+
+#employeeName="ngModel"
+ >
+
+
+ <input type="text"
+ placeholder="Last name"
+ name="employeeDescription"
+ [(ngModel)]="form.employeeDescription"
+ 
+ 
+ 
+ #employeeDescription="ngModel"
+  >
+ 
+ <button id=""  type="submit" class="btn btn-success">Create Account</button>
+
+</form>
