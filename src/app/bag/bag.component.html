@@ -1,0 +1,47 @@
+   
+<form
+
+name="form"
+(ngSubmit)="f.form.valid && onSubmit()"
+#f="ngForm"
+novalidate>
+
+
+<input type="text"
+placeholder="Bag weight"
+name="bagweight"
+[(ngModel)]="form.bagweight"
+
+
+
+#bagweight="ngModel"
+ >
+
+
+ <input type="text"
+ placeholder=" bagDescription"
+ name="bagDescription"
+ [(ngModel)]="form.bagDescription"
+ 
+ 
+ 
+ #bagDescription="ngModel"
+  >
+ 
+  
+
+
+  <input type="text"
+  placeholder=" bagCheck"
+  name="bagCheck"
+  [(ngModel)]="form.bagCheck"
+  
+  
+  
+  #bagDescription="ngModel"
+   >
+
+
+ <button id=""  type="submit" class="btn btn-success">Create Account</button>
+
+</form>
