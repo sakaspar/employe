@@ -7,12 +7,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddComponent } from './add/add.component';
 import { BagComponent } from './bag/bag.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     AddComponent,
-    BagComponent
+    BagComponent,
+    CheckoutComponent,
+
   ],
   imports: [
     BrowserModule,

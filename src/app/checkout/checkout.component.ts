@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import{BagService} from '../services/bag.service';
 
 @Component({
-  selector: 'app-bag',
-  templateUrl: './bag.component.html',
-  styleUrls: ['./bag.component.css']
+  selector: 'app-checkout',
+  templateUrl: './checkout.component.html',
+  styleUrls: ['./checkout.component.css']
 })
-export class BagComponent implements OnInit {
+export class  CheckoutComponent implements OnInit {
 
   form: any = {};
   constructor(
@@ -14,7 +14,7 @@ export class BagComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.form.bagCheck="checkedin"
+    this.form.bagCheck="checkedout"
   }
 
   onSubmit(){
@@ -27,4 +27,3 @@ export class BagComponent implements OnInit {
     }
 
   }
-
