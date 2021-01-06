@@ -499,7 +499,16 @@ name="bagweight"
     <li>
       <label>Bags Number </label>
       <div class="input-text">
-        <select name="adults">
+        <select select    
+        
+        placeholder=" bagsn"
+        
+        [(ngModel)]="form.bagsn"
+        
+        
+        
+        
+        #bagDescription="ngModel"   name="adults">
           <option value="1">1</option>
           <option value="2" selected="selected">2</option>
           <option value="3">3</option>

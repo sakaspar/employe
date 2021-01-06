@@ -1,0 +1,35 @@
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<style src="../node_modules/bootstrap/dist/css/bootstrap.min.css"></style>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Employee List</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            
+            <th>Name</th>
+            <th>Pays</th>            
+            <th>Bags Number</th>
+            <th>State </th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let compagnie of Bags | async">
+              <td id="joujou" style="display:none;">{{compagnie.bagId}}</td>
+            <td>{{compagnie.bagDescription}}</td>
+            <td>{{compagnie.bagweight}}</td>
+            <td>{{compagnie.bagsn}}</td>
+            <td>{{compagnie.bagCheck}}</td>
+            <td><button (click)="deleteBag(compagnie.bagId)" class="btn btn-danger">Delete</button>
+                <button  (click)="detBag(compagnie.bagId)" class="btn btn-info" style="margin-left: 10px" >Details</button>
+             </td> 
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

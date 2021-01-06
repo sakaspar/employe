@@ -3,5 +3,5 @@ export interface bag{
     bagweight : number;
     bagDescription:string;
     bagCheck:string;
-
+    bagsn : number;
 }

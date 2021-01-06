@@ -20,6 +20,23 @@ export class BagService {
   
   }
 
+  public CheckoutEmp(ss:any): Observable<any> {
+    return this.http.delete<bag>("http://localhost:8883/Bag/delete/" +ss+"",ss );
+  
+  }
+  
+
+  public ShowBag(): Observable<bag> {
+    return this.http.get<bag>("http://localhost:8883/Bag/getall" );
+  
+  }
+
+  getBagsList(): Observable<any> {
+    return this.http.get("http://localhost:8883/Bag/getall");
+  }
+
+
+ 
 
 
 }

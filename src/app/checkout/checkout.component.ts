@@ -15,12 +15,13 @@ export class  CheckoutComponent implements OnInit {
 
   ngOnInit(): void {
     this.form.bagCheck="checkedout"
+    this.form.id=13
   }
 
   onSubmit(){
 
     console.log('clicked')
-    this.emp.addEmp(this.form).subscribe(  data =>{console.log(data)
+    this.emp.CheckoutEmp(this.form.id).subscribe(  data =>{console.log(data)
         
     })
     

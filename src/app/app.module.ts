@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { AddComponent } from './add/add.component';
 import { BagComponent } from './bag/bag.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { ShowbagsComponent } from './showbags/showbags.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -16,6 +18,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
     AddComponent,
     BagComponent,
     CheckoutComponent,
+    ShowbagsComponent,
 
   ],
   imports: [
@@ -23,6 +26,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    NgbModule,
     
   ],
   providers: [],
